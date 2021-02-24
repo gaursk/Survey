@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<!-- Head Section -->
+  <head>
+    <title>Survey Form </title>
+    <meta charset="UTF-8">
+<meta name="description" content="this is survey website">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  
+  <!--- BODY SECTION-->
+  <body>
+       <div>
+      <!--- HEADER SECTION--->
+      <header>
+        
+        <!-- 1-Title Section--> 
+      <h1 id="title">XYZ Mobile Phones Survey Form </h1>
+      </header>
+      
+      <!-- Main Section -->
+      <main>
+
+        <!-- Style Section -->
+          <style>
+              /* Body */
+body{
+  background:rgb(135, 250, 169);
+  margin:auto;
+  max-width:700px;
+  line-height:1.5;
+  font-size:1.5em;
+  
+}
+/* title Class */
+
+#title
+{
+  margin: 0;
+  width:100%;
+  min-height:50px;
+  color:red;
+  letter-spacing: 0.1em;
+  font-size:35px;
+  text-align: center;
+}
+
+/* Description class */
+
+#description
+{
+  font-size:25px;
+  font-weight: bold;
+  font-style:italic;
+  text-align:center;
+
+}
+
+/* Form class*/
+form
+{
+  background:rgb(147,5,5,0.2);
+  padding:2.5rem;
+  border-radius:2.5rem;
+  width:500px;
+  margin:auto; 
+}
+
+/* dropdown class */
+
+#dropdown
+ {
+  width:485px;
+ }
+
+/* number class */
+
+#number
+ {
+  width:485px;
+  text-align:center;
+  }
+
+/* name class */
+#name
+ {
+  text-align:center;
+ }
+
+/* Email class */
+
+#email
+{
+  text-align:center;
+}
+
+/* P class */
+p
+{
+  font-weight: bold;
+  font-style:italic;
+}
+
+/* name-label */
+#name-label
+{
+font-weight:bold;
+font-style:italic;
+}
+
+/* email-label */
+#email-label
+{
+font-weight:bold;
+font-style:italic;
+}
+
+/* number-label */
+
+#number-label
+{
+font-weight:bold;
+font-style:italic;
+}
+
+/* sumbit class */
+#submit
+{
+font-weight:bold;
+font-style:italic;
+}
+</style>
+
+
+        <div>
+        <!-- 2- Description Section -->
+          <p id="description">Thank you for taking the time to help us improve the our product quality</p>
+        </div>
+        <!-- 3- form Section-->
+        <form id="survey-form">
+        
+          <!-- 4- Name Section-->
+          <div>
+          <label for="name" id="name-label">Name</label><br>
+          
+          <input id="name" type="text" name="name" placeholder="Enter your name" size="65" required><br>
+          </div>
+          
+          <!-- 5 Email Section-->
+          <div>
+          <label for="email" id="email-label">Email</label><br>
+          <input id="email" type="email" name="email" placeholder="Enter your Email" size="65"required><br>
+       </div>
+          
+          <!-- 7- Number Section-->
+          <div>
+          <label for="number" id="number-label">Product Rating</label><br>
+          <input id="number" type="number" name="number" placeholder="0 to 10" min="0" max="10"><br>
+          </div>
+          
+          <!-- group of dropdown Section -->
+          <div>
+            <p>Select Your Phone Model</p>
+            <select id="dropdown" name ="model" rquired>
+            <option disabled selected value>Select Your Model</option>
+     <option value="Model1">XYZ001</option>
+     <option value="Model2">XYZ002</option>
+     <option value="Model3">XYZ010</option>
+     <option value="Model4">XYZ020</option>
+     <option value="Model5">Other</option>                 
+            </select>
+            <br>
+          </div>
+          
+          <!-- group of radio button-->
+      <div>
+        <p>Select Your Phone Color</p>
+        
+        <label>
+          <input name="user-recommend" value="red" type="radio"> Red
+        </label><br>
+        
+        <label>
+          <input name="user-recommend" value="green" type="radio"> Green
+        </label><br>
+        
+        <label>
+          <input name="user-recommend" value="blue" type="radio"> Blue
+        </label>
+        <br>
+          </div>
+          
+      <!-- Group of Checkbox Button -->
+          <div>
+            <p>What would you like to see in our Product</p>
+            <label>
+              <input name="prefer" Value="increment in ram" type="checkbox"> Increment in RAM              </label><br>
+            
+            <label>
+               <input name="prefer" Value="improvement in camera resolution quailty" type="checkbox"> Improvement in Camera Resolution Quailty
+              </label><br>
+            
+            <label>
+              <input name="prefer" value="improve in screen resolution" type="checkbox"> Imrove in Screen Resolution
+              </label><br>
+            
+            <label>
+              <input name="prefer" value="improve the display size" type="checkbox"> Imrove the Display Size
+              </label><br>
+            
+            <label>
+              <input name="prefer" value="increase the internal memory size" type="checkbox"> Increase the Internal Memory Size
+            </label><br>
+          </div> 
+         
+          <!-- Textarea Section -->
+          <div>
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" name="comment" placeholder="Enter your Comment... " rows="6" cols="70" ></textarea><br>
+          </div>
+          
+          <!-- Submit Section -->
+          <div>
+            <button type="submit" id="submit">
+              Submit
+            </button>
+           </div>
+     
+          </div>
+        </form>
+      </main>
+    </body>
